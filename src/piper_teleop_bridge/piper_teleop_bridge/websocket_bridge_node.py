@@ -13,8 +13,7 @@ import websocket  # This requires the 'websocket-client' pip package
 
 class WebSocketBridgeNode(Node):
     """
-    Connects to a WebSocket server (like the one in apture.py), receives JSON data 
-    containing 6-DoF pose information, and publishes it as a ROS 2 PoseStamped message.
+    Connects to a WebSocket server (like the one in apture.py), receives JSON data  containing 6-DoF pose information, and publishes it as a ROS 2 PoseStamped message.
     
     This node is designed for real-time teleoperation with several key features:
     - Runs the WebSocket client in a separate thread to avoid blocking the ROS node.
@@ -92,7 +91,7 @@ class WebSocketBridgeNode(Node):
                 time.sleep(2.0)
 
     def _on_ws_open(self, ws):
-        self.get_logger().info(f"✅ WebSocket connection established.")
+        self.get_logger().info(f"WebSocket connection established.")
 
     def _on_ws_close(self, ws, status_code, msg):
         self.get_logger().warn(f"WebSocket connection closed.")
