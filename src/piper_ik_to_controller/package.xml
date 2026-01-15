@@ -18,13 +18,15 @@
   <depend>urdf</depend>
   <depend>eigen</depend>
   <depend>piper_eval_msgs</depend>
-  <depend>osqp_vendor</depend>
+  <!-- <depend>osqp_vendor</depend> -->
+  <build_depend>osqp_vendor</build_depend>
 
 
   <exec_depend>launch</exec_depend>
   <exec_depend>launch_ros</exec_depend>
   <exec_depend>ament_index_python</exec_depend>
   <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>osqp_vendor</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

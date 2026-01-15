@@ -34,7 +34,7 @@ endif()
 # -------------------------------------------------------
 # 1. Velocity IK Controller
 # -------------------------------------------------------
-add_executable(piper_ik_to_controller_node src/piper_ik_to_controller.cpp)
+add_executable(piper_ik_to_controller_node src/piper_ik_to_controller_position.cpp)
 ament_target_dependencies(piper_ik_to_controller_node
   rclcpp geometry_msgs sensor_msgs trajectory_msgs kdl_parser orocos_kdl urdf piper_eval_msgs Eigen3
 )

@@ -19,9 +19,10 @@ setup(
     tests_require=["pytest"],
     entry_points={
         "console_scripts": [
-            # IMPORTANT: Change 'websocket_node' to your script's filename (without .py)
-            # and change the part after the colon to match the main function in your script.
-            "websocket_bridge = piper_teleop_bridge.websocket_bridge_node:main",
+            # Client Node (Node 3)
+            "websocket_bridge_3 = piper_teleop_bridge.websocket_bridge_node3:main",
+            # Server Node (Node 4)
+            "websocket_bridge_4 = piper_teleop_bridge.websocket_bridge_node4:main",
         ],
     },
 )

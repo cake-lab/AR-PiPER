@@ -9,8 +9,11 @@
 
   <depend>rclpy</depend>
   <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
 
-  <test_depend>ament_copyright</test_depend>
+  <depend>my_service_package</depend>
+
+  <exec_depend>python3-websockets</exec_depend>      <exec_depend>python3-websocket-client</exec_depend> <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
   <test_depend>python3-pytest</test_depend>
@@ -19,4 +22,3 @@
     <build_type>ament_python</build_type>
   </export>
 </package>
-
