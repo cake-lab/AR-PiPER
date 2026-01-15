@@ -73,7 +73,7 @@ class WebSocketBridgeNode3(Node):
         # Subscriber for Feedback (Robot -> Client)
         # UPDATED: Listening for TeleopMetric
         self.feedback_sub = self.create_subscription(
-            TeleopMetric, self.feedback_topic, self._feedback_cb, qos
+            PiperTeleopMetric, self.feedback_topic, self._feedback_cb, qos
         )
 
         self._data_lock = Lock()
