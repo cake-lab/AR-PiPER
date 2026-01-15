@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-This node is an adaptation of the 'master_evaluator_node.py' from the
-omx workspace, modified to be fully independent and work
+This node is an adaptation of the 'master_evaluator_node.py' from the omx workspace, modified to be fully independent and work
 with Piper-specific topics and messages from the piper_ros workspace.
 
 --- V3 (Research Grade) ---
