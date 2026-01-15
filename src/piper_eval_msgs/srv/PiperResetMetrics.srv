@@ -1,0 +1,7 @@
+# Service to reset the RMSE calculation
+---
+# True if reset was successful, false otherwise
+bool success
+# A status message
+string message
+

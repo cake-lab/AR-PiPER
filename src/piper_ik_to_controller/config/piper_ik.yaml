@@ -1,0 +1,22 @@
+# Parameters for the controller
+piper_ik_to_controller_node:
+  ros__parameters:
+    
+    # --- Performance ---
+    control_rate_hz: 400.0
+    # Higher gains help the Iterative IK converge faster in fewer steps
+    linear_error_gain: 13.0
+    angular_error_gain: 9.0
+
+    # --- Iterative Solver Settings ---
+    ik_iterations: 50       # More iterations for better precision
+    ik_tolerance: 0.01     # 1mm tolerance
+
+    # --- Singularity Handling ---
+    singularity_damping: 0.1
+    manipulability_threshold: 0.02
+    null_space_gain: 0.1
+
+    # --- Safety Limits (INCREASED) ---
+    # Increased from 2.0 -> 3.5 rad/s to prevent saturation during fast moves
+    max_joint_velocity: 3.5
