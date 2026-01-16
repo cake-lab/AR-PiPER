@@ -216,10 +216,10 @@ alias srcs='source install/setup.bash'
 | `ikp`  | `ros2 launch piper_ik_to_controller piper_ik_position.launch.py`            | Launch the position control ROS2 nodes                 |
 | `po`   | `ros2 topic pub /joint_states sensor_msgs/msg/JointState "{header: {stamp: {sec: 0, nanosec: 0}, frame_id: 'piper_single'}, name: ['joint1', 'joint2','joint3','joint4','joint5','joint6','joint7'],position: [0.0,0.50,-0.50,0.0,0.0,0.0,0.01], velocity: [0,0,0,0,0,0,10], effort: [0,0,0,0,0,0,0.5]}" --once` | Run basic robot position control                       |
 | `el2`  | `ros2 launch piper_evaluation piper_evaluation.launch.py`                   | Launch evaluation nodes for testing robot behavior     |
-| `po2`  | `'# call service                                                            | Cutoff power to all motors and shut down the robot     |
-|        |ros2 service call /enable_srv piper_msgs/srv/Enable enable_request:\ false\  |                                                        |
-|        |# pub topic                                                                  |                                                        |
-|        |ros2 topic pub /enable_flag std_msgs/msg/Bool data:\ false\ --once'`         |                                                        |
+| `po2`  | `# call service`                                                            | Cutoff power to all motors and shut down the robot     |
+|        |`ros2 service call /enable_srv piper_msgs/srv/Enable enable_request:\ false\`|                                                        |
+|        |`# pub topic`                                                                |                                                        |
+|        |`ros2 topic pub /enable_flag std_msgs/msg/Bool data:\ false\ --once'`        |                                                        |
 | `web3` | `ros2 run piper_teleop_bridge websocket_bridge_node_3`                      | Start the WebSocket bridge node for CV Control         |
 | `web4` | `ros2 run piper_teleop_bridge websocket_bridge_node_4`                      | Start the WebSocket bridge node for ARCore App Control |
 
