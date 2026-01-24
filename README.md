@@ -210,7 +210,6 @@ alias srcs='source install/setup.bash'
 | Alias  | Command                                                                     | Purpose                                                |
 | :----- | :-------------------------------------------------------------------------- | :----------------------------------------------------- |
 | `srcs` | `source install/setup.bash`                                                 | Source the local OMX workspace setup files             |
-| `sr`   | `source venv/bin/activate`                                                  | Activate the Python virtual environment                |
 | `lau2` | `ros2 launch piper start_single_piper.launch.py`                            | Start the PiPER hardware controller                    |
 | `ikp`  | `ros2 launch piper_ik_to_controller piper_ik_position.launch.py`            | Launch the position control ROS2 nodes                 |
 | `po`   | `ros2 topic pub /joint_states sensor_msgs/msg/JointState "{header: {stamp: {sec: 0, nanosec: 0}, frame_id: 'piper_single'}, name: ['joint1', 'joint2','joint3','joint4','joint5','joint6','joint7'],position: [0.0,0.50,-0.50,0.0,0.0,0.0,0.01], velocity: [0,0,0,0,0,0,10], effort: [0,0,0,0,0,0,0.5]}" --once` | Run basic robot position control                       |
