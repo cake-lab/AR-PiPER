@@ -33,7 +33,7 @@ This project allows you to:
     ```
 
 ## Installation and Setup
-The installation of the repository can be done automatically by running the auto1.sh and auto2.sh in your command prompt as follows:
+The installation of the repository can be done using the command prompt as follows:
 
 1.  **Install Basic Tools and Support Files**
     ```bash
