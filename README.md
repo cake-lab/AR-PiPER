@@ -60,7 +60,6 @@ The installation of the repository can be done automatically by running the auto
     source ~/piper_ros/install/setup.bash
     # Aliases
     alias srcs='source install/setup.bash'
-    alias sr='source venv/bin/activate'
     alias lau2='ros2 launch piper start_single_piper.launch.py'
     alias ikp='ros2 launch piper_ik_to_controller piper_ik_position.launch.py'
 
