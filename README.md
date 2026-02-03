@@ -27,9 +27,9 @@ This project allows you to:
     ```bash
     sudo apt install python3-colcon-common-extensions git
     ```
-  * Python dependencies (from `setup.py`)
+  * Python dependencies
     ```bash
-    pip install numpy scipy opencv-python mediapipe matplotlib
+    pip install numpy scipy matplotlib
     ```
 
 ## Installation and Setup
@@ -175,9 +175,9 @@ The installation of the repository can be done using the command prompt as follo
 ## Interfacing the PiPER Robotic Arm with your system.
 
 1.  **Connect the PiPER Arm to your system via USB-CAN**
+2. **Activate the CAN-BUS Port**  
 
-2.  **Find and activate the CAN-BUS Port**
-    
+   **Follow the Procedure Below to find your CAN-BUS Port (For 1st Time Users Only)**  
     ```bash
     cd ~/piper_ros
     bash find_all_can_port.sh
@@ -198,16 +198,11 @@ The installation of the repository can be done using the command prompt as follo
     Interface can1 is connected to USB port 3-1.1:1.0
     ```
     
-    **Activating the CAN-BUS Port**
+    **Activate the CAN-BUS Port**
     
     ```bash
     bash can_activate.sh can0 1000000 "3-1.4:1.0" # replace this with your port-code
     ```
-
-lau
-ikp
-web3
-
 
 ## Running the Teleop Pipeline
 
