@@ -153,9 +153,9 @@ The installation of the repository can be done using the command prompt as follo
     **Final Dependency Check**
     ```bash
     sudo apt update && rosdep init # Initialize rosdep if you haven't already
-    rosdep update
-    rosdep install --from-paths src --ignore-src -r -y 
-    #rosdep install --from-paths src --ignore-src -r -y --skip-keys "warehouse_ros_mongo" 
+    rosdep update 
+    rosdep install --from-paths src --ignore-src -r -y --skip-keys "warehouse_ros_mongo"
+    #rosdep install --from-paths src --ignore-src -r -y 
     ```
     
 6.  **Build the Workspace:** Build all the packages using `colcon`:
